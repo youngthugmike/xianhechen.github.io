@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Min</title>
+    <title>Min Weng</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -54,11 +54,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <h1>Min</h1>
+                    <h1>Min Weng</h1>
                     <h2 class="subheading">Component: </h2>
                     <h5>Last update by: Min on Mar 17, 2015</h5>
-                    <h2>Overall</h2>
-                    <p> lol </p>
+                    <h2>Additive Synthesis</h2>
+                    <p> Additive synthesis works by adding together sinusoids to make a sound.  As discussed in class, any sound can be made by adding together sinusoids.  An additive synthesizer attacks sound generation by directly using that idea.  Wikipedia has a very nice article on additive synthesis.
+                        On the face of it, this idea seems very easy to implement.  You just specify some way to indicate the amplitude of the fundamental and any required harmonics.  We'll consider a sound definition to be this set of amplitudes.  You program must have some way to specify sound definitions. </p>
+                    <h2>Polyphony</h2>
+                    <p>Polyphony simply means playing more than one note at a time.  When you strum a guitar, you are playing six notes at a time.  Polyphony means being able to start and stop more than one note at the same time.</p>
+                    <h2>Glissando</h2>
+                    <p>A glissando means a smooth transition between two notes. </p>
+                    <h2>Sound cross-fading</h2>
+                    <p>The idea of sound cross-fading is that you generate a single note from more than one set of sound definitions.  You might start with note with sound A, then gradually change to sound B by interpolating between them.  Cross-fading allows for richer sounds, since the sound varies over its period.</p>
+                    <h2>Envelope generation</h2>
+                    <p>How an instrument starts the sound and sustains it varies, but usually has a volume characteristic to it.  An example, a violin may slowly start the sound of a note or quickly start it for different songs.  This is called an "attack".  Many instruments have a rapid decay after the attack, then sustain at another level, only to gradually decay at the end.  In all cases for a wavetable synthesis component you will need to be able to fade the sound at the end over several milliseconds to avoid a "pop".
+                        Wikipedia has a good article on ADSR envelopes.</p>
+                    <h2>Vibrato</h2>
+                    <p>Vibrato is a musical effect where the frequency of the note is varied repeatedly up and down.  It's a common effect in both voice and instruments.  Wikipedia has a nice page on vibrato. </p>
                 </div>
             </div>
         </div>

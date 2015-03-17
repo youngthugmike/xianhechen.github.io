@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Devin</title>
+    <title>Devin Depaepe</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -54,11 +54,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <h1>Devin</h1>
+                    <h1>Devin Depaepe</h1>
                     <h2 class="subheading">Component: </h2>
                     <h5>Last update by: Devin on Mar 17, 2015</h5>
-                    <h2>Overall</h2>
-                    <p> lol </p>
+                    <h2>Wavetable Synthesis</h2>
+                    <p>Wavetable synthesis uses very short audio recordings consisting of one or a few waveforms of a sound.  These recordings can be cut from a recording of a real instrument or created mathematically.  Wikipedia has a very nice article on wavetable synthesis. Samples are longer recordings. Your component will have five or more waveforms available and will play these waveforms on demand as indicated by the sequencer.
+                        The number of wavetable features you support will determine your grade. The following are features of wavetable synthesis:</p>
+                    <h2>Attack and Sustain waves</h2>
+                    <p>Many instruments have an "initial sound", then a recurring sound.  A piano has an initial sound that includes the hammer striking the string, then a decaying sound of the string vibrating.  Many wavetable synthesizers will have a wave for the attack, then a wave that will be repeated for the sustain.  So, you play one waveform, then, when it is done, play the second waveform repeatedly.</p>
+                    <h2>Loop Points</h2>
+                    <p>An alternative to attack and sustain waves is to have a single waveform that includes both and has defined "loop points".  Typically there will be a start and end loop point.  The wave is played from the beginning to the end loop point, at which time we jump to the start loop point and continue playing.  The system keeps playing the part between the start and end as many times as necessary.  Optionally, the sample can be ended by playing the last time past the end loop point.</p>
+                    <h2>Pitch</h2>
+                    <p>Pitch means you can playback a wave at some rate other than what it was recorded at.  As a simple example, if you skip every other sample, you will play back the wave twice as fast, so the pitch is doubled.  We discussed in class how to implement pitch for sample and wave playback.</p>
+                    <h2>Glissando</h2>
+                    <p>A glissando means a smooth transition between two notes.</p>
+                    <h2>Table cross-fading</h2>
+                    <p>The idea of table cross-fading is that you generate a single note from more than one wavetable.  You might start with note with table A, then gradually change to table B by interpolating between them.  Cross-fading allows for richer sounds, since the sound varies over its period.</p>
+                    <h2>Envelope generation</h2>
+                    <p>How an instrument starts the sound and sustains it varies, but usually has a volume characteristic to it.  An example, a violin may slowly start the sound of a note or quickly start it for different songs.  This is called an "attack".  Many instruments have a rapid decay after the attack, then sustain at another level, only to gradually decay at the end.  In all cases for a wavetable synthesis component you will need to be able to fade the sound at the end over several milliseconds to avoid a "pop".
+                        Wikipedia has a good article on ADSR envelopes and we discussed them in class.</p>
+                    <h2>Dynamic Filtering</h2>
+                    <p>Dynamic filtering means the application of "filters" that change the sound of a wave. </p>
                 </div>
             </div>
         </div>

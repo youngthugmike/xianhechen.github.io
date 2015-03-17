@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Amanda</title>
+    <title>Amanda DePelsMaeker</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -54,11 +54,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <h1>Amanda</h1>
+                    <h1>Amanda DePelsMaeker</h1>
                     <h2 class="subheading">Component: </h2>
                     <h5>Last update by: Amanda on Mar 17, 2015</h5>
-                    <h2>Overall</h2>
-                    <p> lol </p>
+                    <h2>Subtractive Synthesis</h2>
+                    <p>Subtractive synthesis works by starting with waveforms rich in harmonic content and removing harmonics using filtering.  Many early synthesizers, such as the Minimoog, were subtractive synthesis and this remains a common building block for sound synthesis.  Wikipedia has a very nice article on subtractive synthesis.
+                        You are required to implement the following waves:
+                        <ul>
+                            <li>square waves</li>
+                            <li>sawtooth waves</li>
+                            <li>triangle waves</li>
+                        </ul>
+                        <p></p>
+                        Pulse waves are also included as an option.  You must implement bandwidth limited waves, so create these waves as tables, NOT mathematically.  A simple offline program can generate these waveforms. The method for playing the waves is similar to that of the wavetable synthesis component.
+                        Elements of a subtractive sythesizer:</p>
+                    <h2>Reson</h2>
+                    <p>A Reson is a simple recursive filter that emphasizes a specific frequency.  It's a simple solution for filtering in this application.  A step project will describe the implementation of a Reson.  The instructor can also provide you with additional details for this component.  You should accomplish something approximating the "Moog sound".</p>
+                    <h2>Polyphony</h2>
+                    <p>Polyphony simply means playing more than one note at a time.  When you strum a guitar, you are playing six notes at a time.  Polyphony means being able to start and stop more than one note at the same time.</p>
+                    <h2>Envelope generation</h2>
+                    <p>How an instrument starts the sound and sustains it varies, but usually has a volume characteristic to it.  An example, a violin may slowly start the sound of a note or quickly start it for different songs.  This is called an "attack".  Many instruments have a rapid decay after the attack, then sustain at another level, only to gradually decay at the end.  In all cases for a wavetable synthesis component you will need to be able to fade the sound at the end over several milliseconds to avoid a "pop".
+                        Wikipedia has a good article on ADSR envelopes and we will discuss them in class.</p>
+                    <h2>Filter Envelopes</h2>
+                    <p>Interesting filter effects are often created by using the same envelope design used for amplitude envelopes to filter parameters.  Sweeping the filter frequency creates the famous "Moog" sound. </p>
                 </div>
             </div>
         </div>

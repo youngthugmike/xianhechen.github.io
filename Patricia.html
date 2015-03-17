@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Patricia</title>
+    <title>Patricia Huang</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -54,11 +54,35 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <h1>Patricia</h1>
+                    <h1>Patricia Huang</h1>
                     <h2 class="subheading">Component: </h2>
                     <h5>Last update by: Patricia on Mar 17, 2015</h5>
-                    <h2>Overall</h2>
-                    <p> lol </p>
+                    <h2>Drum Synthesis</h2>
+                    <p>Most synthesis systems treat drums separately because they work very differently.  In this component you are required to generate sounds for a basic drum kit consisting of (as a minimum):
+                        <ul>
+                            <li>Bass drum</li>
+                            <li>Snare drum</li>
+                            <li>2 or more Toms</li>
+                            <li>Cymbals</li>
+                            <p></p>
+                        </ul>
+                        The easiest solution for drum synthesis is to have wavetables for each sound and play them back on demand.  Other options include using noise (random numbers) and filtering or adding a lot of sine waves to build up the sound.   A basic solution for this component will consist of this.  To get full credit you must completely synthesize at least one drum.
+                        Elements of a drum synthesizer:</p>
+                    <h2>Polyphony</h2>
+                    <p>Polyphony simply means playing more than one note at a time.  When you strum a guitar, you are playing six notes at a time.  Polyphony means being able to start and stop more than one note at the same time.</p>
+                    <h2>Envelope generation</h2>
+                    <p>How an instrument starts the sound and sustains it varies, but usually has a volume characteristic to it.  An example, a violin may slowly start the sound of a note or quickly start it for different songs.  This is called an "attack".  Many instruments have a rapid decay after the attack, then sustain at another level, only to gradually decay at the end.  In all cases for a wavetable synthesis component you will need to be able to fade the sound at the end over several milliseconds to avoid a "pop".  Envelopes can significantly change the sound of drums.
+                        Wikipedia has a good article on ADSR envelopes and we will discuss them in class.</p>
+                    <h2>Synthesis options</h2>
+                    <p>If you want to synthesize a drum sound, you can generate a combination of noise and some pitch and then filter that through a phaser and you can make pretty cool techno drum sounds. </p>
+                    <h2>Noise generation</h2>
+                    <p>Simple use random numbers to create white noise as a starting point for your drum sound. </p>
+                    <h2>Swept fundamentals</h2>
+                    <p>It's also common that a sinusoid will also be a component of a drum sound, though it tends to be "swept".  When you hit a drum hit, the vibrations stretch the head, raising the resonant frequency.  As the vibrations decrease, the stretch also decreases.  Hence, the frequency starts at a higher pitch and rapidly decreases in pitch. </p>
+                    <h2>Reson</h2>
+                    <p>A Reson is a simple recursive filter that emphasizes a specific frequency.  It's a simple solution for filtering in this application.  Step 4 described the implementation of a reson.  The instructor can also provide you with additional details for this component. </p>
+                    <h2>Filter Envelopes</h2>
+                    <p>Interesting filter effects are often created by using the same envelope design used for amplitude envelopes to filter parameters.  Sweeping the filter frequency creates the famous "Moog" sound.  Filter envelopes really work nicely for drum synthesis.</p>
                 </div>
             </div>
         </div>
