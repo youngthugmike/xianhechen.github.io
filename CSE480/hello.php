@@ -1,10 +1,10 @@
-<HTML> 
-<HEAD> 
-<TITLE>Hello World!</TITLE> 
-</HEAD> 
-<BODY> 
-<? 
- echo("<H1>Hello World!</H1>");
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo "My first PHP script!";
 ?>
-</BODY> 
-</HTML>
+
+</body>
+</html>
